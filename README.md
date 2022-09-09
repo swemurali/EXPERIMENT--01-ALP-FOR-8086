@@ -1,12 +1,9 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
-
-
-
-
-
+```
+Name : M.SUWETHA
+Roll no: 212221230112
+Date of experiment : 09/09/2022
+```
 ## Aim: To Write and execute ALP on fundamental arithmetic and logical operations
 ## Components required: 8086  emulator 
 ## Theory 
@@ -29,74 +26,94 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 7.	After running the program, another menu screen will be displayed, where you have the option to “View” symbol table,
 8.	 
 
-
 ![image](https://user-images.githubusercontent.com/36288975/189273263-d65baae9-4b8f-4723-afb3-c0ffa4052b04.png)
-
-
-
-
-
-
-
-
-
-
 
 9.	Click on emulate to start emulation 
 
-
-
-
-
-
-
-
 ![image](https://user-images.githubusercontent.com/36288975/189273273-9bb36ec1-e2e8-4892-8d35-37707332bfdc.png)
-
-
-
-
-
-
-
 
 10.	If no errors are found click on run the program and check the status of various flags in the flags tab as shown below 
 
-
-
-
-
-
 ![image](https://user-images.githubusercontent.com/36288975/189273277-113a2a33-4a40-4ff8-95a5-ecd3a1f504fe.png)
 
-
-
-
-
-
-
 ## Programs for arithmetic  operations
-
-## Addition  of 8 bit ALP 
-
-
-
-## Output  
+## Addition  of 8 bit ALP
+``` 
+name "ADDITION"
+org 200h
+MOV AX,05H;
+MOV BX,02H;
+ADD AX,BX;
+MOV CX,AX;
+MOV AX,00H;
+HLT;
+```
+## Output 
+![output](./ia-01.png)
+![output](./ia-02.png)
+![output](./ia-03.png)
+![output](./ia-04.png)
+![output](./ia-05.png)
+![output](./ia-06.png)
  
 ## Subtraction   of 8 bit numbers  ALP 
- 
+ ```
+name "SUBTRACTION"
+org 200h
+MOV AX,06H;
+MOV BX,04H;
+SUB AX,BX;
+MOV CX,AX;
+MOV AH,00H;
+HLT;
+ ```
 ## Output  
+![output](./pc-01.png)
+![output](./pc-02.png)
+![output](./pc-03.png)
+![output](./pc-04.png)
+![output](./pc-05.png)
+![output](./pc-06.png)
 ## Multiplication alp 
+```
+name "MULTIPLICATION"
+org 200h
+MOV AL,02H;
+MOV BL,03H;
+MUL BL;
+MOV CL,AL;
+MOV AL,00H;
+HLT;
+```
  ## Output  
-
-
+![output](./mc-01.png)
+![output](./mc-02.png)
+![output](./mc-03.png)
+![output](./mc-04.png)
+![output](./mc-05.png)
+![output](./mc-06.png)
 ## Division alp 
+```
+name "DIVISION"
+org 100h
+MOV AL,20H;
+MOV BL,10H;
+DIV BL;
+MOV CL,AL;
+MOV AL,00H;
+HLT;
+```
 
 ## Output  
-
+![output](./dc-01.png)
+![output](./dc-02.png)
+![output](./dc-03.png)
+![output](./dc-04.png)
+![output](./dc-05.png)
+![output](./dc-06.png)
 
 ## Result :
- 
+ ALP on fundamental arithmetic and logical operations for 8086 is written and executed.
 
 
 
